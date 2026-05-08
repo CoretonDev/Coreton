@@ -1,0 +1,6 @@
+Package: helloworld
+Version: 0.2
+Maintainer: King Foo
+Architecture: all
+Description: hello world
+

@@ -1,9 +1,13 @@
+#!/bin/perl
+
 import tkinter as tk
 from tkinter import messagebox
 import bcrypt
 import requests
 import data
 import home  # <--- WE IMPORT HOME HERE
+
+
 
 def login_user(username, password):
     try:
@@ -35,7 +39,7 @@ def open_login_window():
         u = u_entry.get().strip()
         if login_user(u, p_entry.get().strip()):
             root.destroy() # Closes the login box
-            home.open_home_window(u) # <--- THIS OPENS HOME.PY
+            home.open_home_window(u)
         else: 
             messagebox.showerror("Error", "Invalid Login")
 
